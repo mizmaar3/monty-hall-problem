@@ -30,12 +30,9 @@ describe("gameSimulation actions", () => {
   });
 
   describe("resetToInitial", () => {
-    it("should call dispatch with GET_GAME_SIMULATION_INITIAL type", () => {
-      const dispatch = jest.fn();
-      resetToInitial()(dispatch);
-      expect(dispatch).toHaveBeenCalledWith({
-        type: GET_GAME_SIMULATION_INITIAL,
-      });
+    it("should return obj with GET_GAME_SIMULATION_INITIAL type", () => {
+      const result = resetToInitial();
+      expect(result.type).toBe(GET_GAME_SIMULATION_INITIAL);
     });
   });
 });
