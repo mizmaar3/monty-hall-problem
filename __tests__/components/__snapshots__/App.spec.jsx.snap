@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component Should render <Starter> when load 1`] = `
+<Fragment>
+  <Starter />
+  <br />
+  <Results />
+</Fragment>
+`;
+
+exports[`App component Should render Game component when there is game data 1`] = `
+<Game
+  changeSelectionAfterTrick={true}
+  data={
+    Array [
+      1,
+      0,
+      0,
+    ]
+  }
+/>
+`;
